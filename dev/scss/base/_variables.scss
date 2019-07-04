@@ -1,0 +1,12 @@
+$green: #2f889a;
+$gray: #d2d8d8;
+$text: #61728a;
+$font_size: 12px;
+$tab_header_color: #d2d8d8;
+$border_radius: 4px;
+$input_height: 36px;
+
+
+%border-radius {
+    border-radius: $border_radius;
+}

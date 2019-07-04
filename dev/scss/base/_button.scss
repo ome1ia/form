@@ -1,0 +1,23 @@
+%button {
+    display: inline-block;
+    padding: 0 20px;
+    @extend %border-radius;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: none;
+    text-decoration: none;
+    font: bold $font_size Arial, Helvetica, sans-serif;
+    line-height: $input_height;
+    transition: background 0.2s;
+}
+
+.g-button--green {
+    @extend %button;
+    background-color: $green;
+    color: white;
+
+    &:hover {
+        background-color: lighten($green, 20%);
+    }
+}

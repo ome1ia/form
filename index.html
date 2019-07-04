@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  
+  <title>Тест</title>
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main class="g-container">
+        <div class="g-v_center g-h_center">
+            <a href="#auth" class="g-button--green js-dialog_show js-tab_show" data-toggle="#dialog">Вход</a>
+            <a href="#registration" class="g-button--green js-dialog_show js-tab_show" data-toggle="#dialog">Регистрация</a>
+        </div>
+    </main>
+
+    <div class="g-dialog js-dialog g-hidden" id="dialog">
+        <div class="g-dialog__content">
+            <div class="g-tabs">
+                <div class="g-tabs__header">
+                    <a href="#auth" class="g-tabs__title g-tabs__title--active js-tab_show">Вход</a>
+                    <a href="#registration" class="g-tabs__title js-tab_show">Регистрация</a>
+                </div>
+
+                <form id="auth" class="g-tabs__content g-form auth_form" action="" method="post">
+                    <div class="g-form__field">
+                        <i class="icon-mail g-form__icon"></i>
+                        <input type="text" inputmode="email" id="auth_email" class="g-form__input js-email" name="email" value="" placeholder="E-mail" required />
+                        <label for="auth_email" class="g-form__tooltip">E-mail <span class="g-form__error_message js-error_message"></span></label>
+                    </div>
+
+                    <div class="g-form__field">
+                        <i class="icon-key g-form__icon"></i>
+                        <input type="text" id="auth_password" class="g-form__input" name="password" value="" placeholder="Пароль" required />
+                        <label for="auth_password" class="g-form__tooltip">Пароль</label>
+                        <button type="button" class="g-link auth_form__hide_link js-toggle_password">Скрыть</button>
+                    </div>
+
+                    <div class="g-form__field">
+                        <input type="checkbox" name="remember_me" value="1" id="remember_me">
+                        <label class="g-form__label" for="remember_me">Запомнить меня</label>
+                    </div>
+
+                    <button type="submit" class="g-button--green g-w_100">Войти</button>
+
+                    <a href="#" class="auth_form__restore_password">Забыли свой пароль?</a>
+                </form>
+
+                <form id="registration" class="g-tabs__content g-form auth_form g-hidden" action="" method="post">
+                    <div class="g-form__field">
+                        <i class="icon-mail g-form__icon"></i>
+                        <input type="text" inputmode="email" id="reg_email" class="g-form__input js-email" name="email" value="" placeholder="E-mail" required />
+                        <label for="reg_email" class="g-form__tooltip">E-mail* <span class="g-form__error_message js-error_message"></span></label>
+                    </div>
+
+                    <div class="g-form__field">
+                        <i class="icon-key g-form__icon"></i>
+                        <input type="text" id="reg_password1" class="g-form__input" name="password1" value="" placeholder="Пароль" required />
+                        <label for="reg_password1" class="g-form__tooltip">Пароль*</label>
+                        <button type="button" class="g-link auth_form__hide_link js-toggle_password">Скрыть</button>
+                    </div>
+
+                    <div class="g-form__field">
+                        <i class="icon-key g-form__icon"></i>
+                        <input type="text" id="reg_password2" class="g-form__input" name="password2" value="" placeholder="Пароль" required />
+                        <label for="reg_password2" class="g-form__tooltip">Повторите пароль*</label>
+                        <button type="button" class="g-link auth_form__hide_link js-toggle_password">Скрыть</button>
+                    </div>
+
+                    <button type="submit" class="g-button--green g-w_100">Зарегистрироваться</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="g-dialog__fon js-dialog__close"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/index.min.js"></script>
+</body>
+</html>

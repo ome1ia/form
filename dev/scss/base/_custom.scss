@@ -1,0 +1,15 @@
+*, body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    @media all and(max-height: 371px) {
+        min-height: 370px; //чтобы не обрезалась форма, так как она абсолютно спозиционирована, а контента мало
+    }
+}

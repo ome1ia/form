@@ -1,0 +1,47 @@
+.g-dialog {
+    position: absolute; //либо position: fixed, если размер контента больше одного экрана, а форма небольшая
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    &__fon {
+        position: absolute;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(51,53,65,0.9);
+    }
+
+    &__content {
+        position: absolute;
+        z-index: 10001;
+        margin: auto;
+        width: 420px;
+        @extend %border-radius;
+        background: white;
+
+        //добавим анимацию появления
+        animation: slidein 0.5s;
+
+        @media all and (max-width: 460px) {
+            width: 260px;
+        }
+    }
+}
+
+@keyframes slidein {
+  from {
+    margin-top: -100%;
+  }
+
+  to {
+    margin-top: auto;
+  }
+}

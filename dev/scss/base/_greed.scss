@@ -1,0 +1,20 @@
+.g-container {
+    display: flex;
+    max-width: 1200px;
+    min-width: 260px;
+    margin: 0 auto;
+    padding: 20px; //в реальном проекте бы не использовала отступ
+}
+    .g-v_center {
+        justify-self: center;
+        margin: auto;
+    }
+    .g-h_center {
+        align-self: center;
+    }
+
+.g-w_100 {
+    display: block;
+    width: 100%;
+}
+

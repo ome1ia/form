@@ -1,0 +1,29 @@
+.auth_form {
+    position: relative;
+    padding: 22px;
+
+    &__hide_link {
+        position: absolute;
+        z-index: 3;
+        right: 0;
+        width: 62px;
+        top: 10px;
+        padding: 0 10px;
+        line-height: $input-height - 20;
+        text-decoration: none;
+        border-left: 1px solid $gray;
+        color: $text;
+    }
+
+    &__restore_password {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        margin-bottom: -$font_size*2;
+        width: 100%;
+        color: white;
+        font-weight: bold;
+        font-size: $font_size*0.9;
+        text-align: center;
+    }
+}
